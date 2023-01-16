@@ -17,7 +17,6 @@ app.use(express.static('static'))
 
 app.use('/api', router)
 
-// отлов ошибок
 app.use(ErrorHandlingMiddleware)
 
 

@@ -2,8 +2,6 @@ const ApiError = require('../error/ApiError')
 const { Chapter, Manga } = require('../models/models')
 const path = require('path')
 const fs = require('fs')
-const { Sequelize } = require('../db')
-const { runInNewContext } = require('vm')
 
 
 class chapterController {
