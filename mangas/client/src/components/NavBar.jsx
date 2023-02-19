@@ -3,7 +3,7 @@ import {  } from 'react-bootstrap'
 import { Link, useNavigate } from 'react-router-dom'
 import { Context } from '..'
 import { ReactComponent as HeartSvg} from '../icons/heart-svgrepo-com.svg'
-import { ADMIN_PATH, FAVORITES_PATH, LOGIN_PATH, PROFILE_PATH } from '../routes/paths'
+import { ADMIN_PATH, FAVORITES_PATH, LOGIN_PATH, PROFILE_PATH, MAIN_PATH } from '../routes/paths'
 import '../styles/nav.css'
 
 export default function NavBar() {
@@ -20,7 +20,7 @@ export default function NavBar() {
     user.setUser({})
     user.setIsAuth(false)
     localStorage.removeItem('token')
-    navigator('/login')
+    navigator(LOGIN_PATH)
   }
 
   return (
@@ -29,7 +29,7 @@ export default function NavBar() {
         <div className="navBody">
 
           <div className="navLogo">
-            <Link to="/" onClick={() => setIsBurgerActive(false)}>
+            <Link to={MAIN_PATH} onClick={() => setIsBurgerActive(false)}>
               Главная
             </Link>
           </div>
