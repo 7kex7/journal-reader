@@ -1,5 +1,5 @@
 
-color pallete:
+color palette:
 
 #222831 dark
 #393E46 grey
