@@ -5,6 +5,7 @@ import { authRoutes, publicRoutes } from './routes/router'
 import { observer } from 'mobx-react-lite'
 import NavBar from './components/NavBar'
 import { check } from './http/userAPI'
+import Catalog from './pages/Catalog'
 
 const App = observer(() => {
 
@@ -43,6 +44,8 @@ const App = observer(() => {
         { publicRoutes.map((route, index) => 
             <Route path={route.path} element={<route.element />} key={index}/>
         )}
+
+        <Route path="*" element={<Catalog />}/>
       </Routes>
     </ Router>
   )
