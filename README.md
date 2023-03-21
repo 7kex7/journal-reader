@@ -4,8 +4,8 @@
 
 
 
-Бекэнд на express js (с исп. PostgreSQL),  
-Фронт на react.
+backend -> express js (с исп. PostgreSQL),  
+frontend -> react (js).
 
 
 
