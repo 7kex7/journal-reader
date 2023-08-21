@@ -1,7 +1,6 @@
-# manga-reader
+# journal-reader
 
-## Это сайт на `node js` для чтения манги
-
+## Это сайт на `node js` для добавления и чтения книг, журналов, комиксов, манги
 
 
 backend -> express js (с исп. PostgreSQL),  
@@ -32,16 +31,14 @@ frontend -> react (js).
 >     - "react": "^18.2.0",
 >     - "react-bootstrap": "^2.6.0",
 
-
-**Запускать** локальный сервер и в server и в client можно через команду "npm start"
-
+все запуски через npm start
 
 ### Какие страницы есть в приложении
 
 - Админ панель (при наличии у пользователья соответствующих прав)  
 (client/src/pages/Admin.jsx)
 - Каталог (client/src/pages/Catalog.jsx)
-- Манга (client/src/pages/Manga.jsx)
+- Страница с произведением (client/src/pages/Manga.jsx)
 - Профиль (client/src/pages/Profile.jsx)
 - Избранное (client/src/pages/Favorites.jsx)
 - Авторизация/регистрация (производится с помощью web token) (client/src/pages/Auth.jsx)
